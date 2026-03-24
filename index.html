@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 
-<html class="light" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>EduHub - Biblioteca de Recursos Pedagógicos</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>EduHub - Biblioteca de Recursos Pedagógicos</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -67,251 +75,301 @@
                         "body": ["Inter"],
                         "label": ["Inter"]
                     },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
                 },
             },
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .bg-primary-gradient {
             background: linear-gradient(135deg, #006b55 0%, #4fb094 100%);
         }
     </style>
 </head>
+
 <body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-sm dark:shadow-none">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="text-2xl font-bold tracking-tighter text-[#006b55] dark:text-[#4fb094] font-headline">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-sm dark:shadow-none">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-2xl font-bold tracking-tighter text-[#006b55] dark:text-[#4fb094] font-headline">
                 EduHub
             </div>
-<div class="hidden md:flex items-center space-x-8 font-plus-jakarta text-sm font-medium tracking-tight">
-<a class="text-[#006b55] dark:text-[#4fb094] font-bold border-b-2 border-[#006b55] pb-1" href="#">Home</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-[#006b55] transition-colors duration-200" href="#">About</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-[#006b55] transition-colors duration-200" href="#">Contact</a>
-</div>
-<button class="bg-primary-gradient text-on-primary px-5 py-2 rounded-lg font-medium text-sm transition-transform scale-95 active:scale-90 shadow-sm">
-                Admin Login
-            </button>
-</div>
-</nav>
-<main class="pt-24 pb-20">
-<!-- Hero Section -->
-<section class="max-w-7xl mx-auto px-8 py-16 md:py-24 text-center">
-<h1 class="font-headline text-4xl md:text-6xl font-extrabold tracking-tight text-on-surface mb-6">
+            <div class="hidden md:flex items-center space-x-8 font-plus-jakarta text-sm font-medium tracking-tight">
+                <a class="text-[#006b55] dark:text-[#4fb094] font-bold border-b-2 border-[#006b55] pb-1"
+                    href="#">Home</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#006b55] transition-colors duration-200"
+                    href="#">About</a>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-24 pb-20">
+        <!-- Hero Section -->
+        <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 text-center">
+            <h1 class="font-headline text-4xl md:text-6xl font-extrabold tracking-tight text-on-surface mb-6">
                 Biblioteca de Recursos <span class="text-primary">Pedagógicos</span>
-</h1>
-<p class="max-w-2xl mx-auto text-on-surface-variant text-lg md:text-xl font-body mb-12">
-                Comparte conocimientos, inspira mentes. Encuentra y descarga recursos educativos gratuitos diseñados por expertos.
+            </h1>
+            <p class="max-w-2xl mx-auto text-on-surface-variant text-lg md:text-xl font-body mb-12">
+                Comparte conocimientos, inspira mentes. Encuentra y descarga recursos educativos gratuitos diseñados por
+                expertos.
             </p>
-<!-- Prominent Search Bar -->
-<div class="max-w-3xl mx-auto relative group">
-<div class="absolute inset-y-0 left-5 flex items-center pointer-events-none">
-<span class="material-symbols-outlined text-outline">search</span>
-</div>
-<input class="w-full pl-14 pr-32 py-5 bg-surface-container-low rounded-xl text-on-surface placeholder:text-outline border-none focus:ring-2 focus:ring-primary/40 transition-all text-lg shadow-sm" placeholder="¿Qué quieres enseñar hoy? Busca guías, ejercicios..." type="text"/>
-<button class="absolute right-3 top-2.5 bottom-2.5 bg-primary-gradient text-on-primary px-6 rounded-lg font-semibold flex items-center justify-center transition-transform hover:scale-105 active:scale-95">
+            <!-- Prominent Search Bar -->
+            <div class="max-w-3xl mx-auto relative group">
+                <div class="absolute inset-y-0 left-5 flex items-center pointer-events-none">
+                    <span class="material-symbols-outlined text-outline">search</span>
+                </div>
+                <input
+                    class="w-full pl-14 pr-32 py-5 bg-surface-container-low rounded-xl text-on-surface placeholder:text-outline border-none focus:ring-2 focus:ring-primary/40 transition-all text-lg shadow-sm"
+                    placeholder="¿Qué quieres enseñar hoy? Busca guías, ejercicios..." type="text" />
+                <button
+                    class="absolute right-3 top-2.5 bottom-2.5 bg-primary-gradient text-on-primary px-6 rounded-lg font-semibold flex items-center justify-center transition-transform hover:scale-105 active:scale-95">
                     Buscar
                 </button>
-</div>
-</section>
-<!-- Filter Bar -->
-<section class="max-w-7xl mx-auto px-8 mb-16">
-<div class="flex items-center justify-center flex-wrap gap-3 overflow-x-auto pb-4 md:pb-0">
-<button class="px-6 py-2.5 rounded-full font-medium text-sm transition-colors bg-primary text-on-primary">
+            </div>
+        </section>
+        <!-- Filter Bar -->
+        <section class="max-w-7xl mx-auto px-8 mb-16">
+            <div class="flex items-center justify-center flex-wrap gap-3 overflow-x-auto pb-4 md:pb-0">
+                <button
+                    class="px-6 py-2.5 rounded-full font-medium text-sm transition-colors bg-primary text-on-primary">
                     Todos
                 </button>
-<button class="px-6 py-2.5 rounded-full font-medium text-sm transition-colors bg-secondary-container text-on-secondary-container hover:bg-surface-container-high">
+                <button
+                    class="px-6 py-2.5 rounded-full font-medium text-sm transition-colors bg-secondary-container text-on-secondary-container hover:bg-surface-container-high">
                     Matemáticas
                 </button>
-<button class="px-6 py-2.5 rounded-full font-medium text-sm transition-colors bg-secondary-container text-on-secondary-container hover:bg-surface-container-high">
+                <button
+                    class="px-6 py-2.5 rounded-full font-medium text-sm transition-colors bg-secondary-container text-on-secondary-container hover:bg-surface-container-high">
                     Lenguaje
                 </button>
-<button class="px-6 py-2.5 rounded-full font-medium text-sm transition-colors bg-secondary-container text-on-secondary-container hover:bg-surface-container-high">
+                <button
+                    class="px-6 py-2.5 rounded-full font-medium text-sm transition-colors bg-secondary-container text-on-secondary-container hover:bg-surface-container-high">
                     Arte
                 </button>
-<button class="px-6 py-2.5 rounded-full font-medium text-sm transition-colors bg-secondary-container text-on-secondary-container hover:bg-surface-container-high">
+                <button
+                    class="px-6 py-2.5 rounded-full font-medium text-sm transition-colors bg-secondary-container text-on-secondary-container hover:bg-surface-container-high">
                     Ciencias
                 </button>
-</div>
-</section>
-<!-- Resource Grid -->
-<section class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Card 1 -->
-<article class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300 hover:-translate-y-2">
-<div class="aspect-video relative overflow-hidden bg-surface-container">
-<img alt="Matemáticas" class="w-full h-full object-cover" data-alt="colorful wooden math blocks and numbers on a white desk with soft educational lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd83t3zcFzAafXbVZcJkVdk4ZUYznPvPJw4ISRvSziaHENiHltJXx57ijRXYynQLSpnhZa8R3QBflpPeQ6yJpV0kNZOq-HjdDDwRXDWgcSKVqQ7J04roBW4tRqmGSocbfYoeyi1iPWL7LtwrQT79T5OfokB6c-E19861KVUE4pc6nRRrWPUL6XTH_Pn0G2e4NQwjzZxzpT6BrMR1ixQopR3Q19Jy_oZ_AsDLLFdc0HiF4O43ZxA2qi2dzaMKdka4dFW-tvf_tHF7zQ"/>
-<div class="absolute top-4 left-4">
-<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">Matemáticas</span>
-</div>
-</div>
-<div class="p-6">
-<h3 class="font-headline text-xl font-bold text-on-surface mb-3">Guía de Fracciones</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
-                            Material interactivo para comprender las fracciones de manera visual y práctica para primaria.
+            </div>
+        </section>
+        <!-- Resource Grid -->
+        <section class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <article
+                    class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300 hover:-translate-y-2">
+                    <div class="aspect-video relative overflow-hidden bg-surface-container">
+                        <img alt="Matemáticas" class="w-full h-full object-cover"
+                            data-alt="colorful wooden math blocks and numbers on a white desk with soft educational lighting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd83t3zcFzAafXbVZcJkVdk4ZUYznPvPJw4ISRvSziaHENiHltJXx57ijRXYynQLSpnhZa8R3QBflpPeQ6yJpV0kNZOq-HjdDDwRXDWgcSKVqQ7J04roBW4tRqmGSocbfYoeyi1iPWL7LtwrQT79T5OfokB6c-E19861KVUE4pc6nRRrWPUL6XTH_Pn0G2e4NQwjzZxzpT6BrMR1ixQopR3Q19Jy_oZ_AsDLLFdc0HiF4O43ZxA2qi2dzaMKdka4dFW-tvf_tHF7zQ" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">Matemáticas</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline text-xl font-bold text-on-surface mb-3">Guía de Fracciones</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Material interactivo para comprender las fracciones de manera visual y práctica para
+                            primaria.
                         </p>
-<div class="flex items-center justify-between mt-auto">
-<span class="text-xs font-medium text-outline flex items-center gap-1">
-<span class="material-symbols-outlined text-sm">picture_as_pdf</span> PDF • 2.4 MB
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs font-medium text-outline flex items-center gap-1">
+                                <span class="material-symbols-outlined text-sm">picture_as_pdf</span> PDF • 2.4 MB
                             </span>
-<button class="bg-primary-gradient text-on-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-opacity hover:opacity-90">
-<span class="material-symbols-outlined text-sm">download</span> Download PDF
+                            <button
+                                class="bg-primary-gradient text-on-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-opacity hover:opacity-90">
+                                <span class="material-symbols-outlined text-sm">download</span> Download PDF
                             </button>
-</div>
-</div>
-</article>
-<!-- Card 2 -->
-<article class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300 hover:-translate-y-2">
-<div class="aspect-video relative overflow-hidden bg-surface-container">
-<img alt="Lenguaje" class="w-full h-full object-cover" data-alt="open book with eyeglasses on top in a quiet sunlit library setting with warm tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEDqcXlY-4CID4f0S5C0GEgApitCIxkxYvQVnbrkd1fD5Lpf2_wJkbjdn06v7XT4BeTz9KpG2MsQVXOQbO2IpkLPsAv8N4ureALe7F_--LLIgbxrDrifrUmeK3XeCcW_vsUegSQdWUZB4i3Q9yibje1zy7CQNQofl0kHE77iOidvWpacIcNZ5_-8WcLfR6Pbg00CVE9MllTUU3PCFacgXfoU3_YDVJhgo0QErPMestpbHkih7gKFtzMpI0w4HHQZBe-zjORd3db-F5"/>
-<div class="absolute top-4 left-4">
-<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">Lenguaje</span>
-</div>
-</div>
-<div class="p-6">
-<h3 class="font-headline text-xl font-bold text-on-surface mb-3">Comprensión Lectora</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
-                            Set de lecturas cortas con ejercicios de análisis crítico y vocabulario avanzado para secundaria.
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 2 -->
+                <article
+                    class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300 hover:-translate-y-2">
+                    <div class="aspect-video relative overflow-hidden bg-surface-container">
+                        <img alt="Lenguaje" class="w-full h-full object-cover"
+                            data-alt="open book with eyeglasses on top in a quiet sunlit library setting with warm tones"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEDqcXlY-4CID4f0S5C0GEgApitCIxkxYvQVnbrkd1fD5Lpf2_wJkbjdn06v7XT4BeTz9KpG2MsQVXOQbO2IpkLPsAv8N4ureALe7F_--LLIgbxrDrifrUmeK3XeCcW_vsUegSQdWUZB4i3Q9yibje1zy7CQNQofl0kHE77iOidvWpacIcNZ5_-8WcLfR6Pbg00CVE9MllTUU3PCFacgXfoU3_YDVJhgo0QErPMestpbHkih7gKFtzMpI0w4HHQZBe-zjORd3db-F5" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">Lenguaje</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline text-xl font-bold text-on-surface mb-3">Comprensión Lectora</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Set de lecturas cortas con ejercicios de análisis crítico y vocabulario avanzado para
+                            secundaria.
                         </p>
-<div class="flex items-center justify-between mt-auto">
-<span class="text-xs font-medium text-outline flex items-center gap-1">
-<span class="material-symbols-outlined text-sm">picture_as_pdf</span> PDF • 1.8 MB
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs font-medium text-outline flex items-center gap-1">
+                                <span class="material-symbols-outlined text-sm">picture_as_pdf</span> PDF • 1.8 MB
                             </span>
-<button class="bg-primary-gradient text-on-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-opacity hover:opacity-90">
-<span class="material-symbols-outlined text-sm">download</span> Download PDF
+                            <button
+                                class="bg-primary-gradient text-on-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-opacity hover:opacity-90">
+                                <span class="material-symbols-outlined text-sm">download</span> Download PDF
                             </button>
-</div>
-</div>
-</article>
-<!-- Card 3 -->
-<article class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300 hover:-translate-y-2">
-<div class="aspect-video relative overflow-hidden bg-surface-container">
-<img alt="Arte" class="w-full h-full object-cover" data-alt="artistic painter palette with vibrant oils and brushes in a bright creative studio space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAjwJzYxaSxUJtVFAsLdqrcMlDS1NxYPee1wMMPamNajt-HW0gIGgqcf0MK25m3T0lLpqyh2bX0S3cOrnX1gvGT5gr-GUPspukgQekBAbcnBPqD8Z1TW4ZmEotlSQvr6Evi158Z8lErj4cUFlckgZKn9vBtMoxhGonw4fElsvOqCZMPl1ktIijh3d3_QxMRKLbc3PwCPieJymeuIyBw0VToRQoCmU12u-0RHvG99dHqRyF3i42IEOXNh5Iefo37Nb0xlav8kE_3BIo"/>
-<div class="absolute top-4 left-4">
-<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">Arte</span>
-</div>
-</div>
-<div class="p-6">
-<h3 class="font-headline text-xl font-bold text-on-surface mb-3">Historia del Arte</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 3 -->
+                <article
+                    class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300 hover:-translate-y-2">
+                    <div class="aspect-video relative overflow-hidden bg-surface-container">
+                        <img alt="Arte" class="w-full h-full object-cover"
+                            data-alt="artistic painter palette with vibrant oils and brushes in a bright creative studio space"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAjwJzYxaSxUJtVFAsLdqrcMlDS1NxYPee1wMMPamNajt-HW0gIGgqcf0MK25m3T0lLpqyh2bX0S3cOrnX1gvGT5gr-GUPspukgQekBAbcnBPqD8Z1TW4ZmEotlSQvr6Evi158Z8lErj4cUFlckgZKn9vBtMoxhGonw4fElsvOqCZMPl1ktIijh3d3_QxMRKLbc3PwCPieJymeuIyBw0VToRQoCmU12u-0RHvG99dHqRyF3i42IEOXNh5Iefo37Nb0xlav8kE_3BIo" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">Arte</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline text-xl font-bold text-on-surface mb-3">Historia del Arte</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
                             Un recorrido por las vanguardias del siglo XX con láminas descargables en alta resolución.
                         </p>
-<div class="flex items-center justify-between mt-auto">
-<span class="text-xs font-medium text-outline flex items-center gap-1">
-<span class="material-symbols-outlined text-sm">picture_as_pdf</span> PDF • 5.1 MB
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs font-medium text-outline flex items-center gap-1">
+                                <span class="material-symbols-outlined text-sm">picture_as_pdf</span> PDF • 5.1 MB
                             </span>
-<button class="bg-primary-gradient text-on-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-opacity hover:opacity-90">
-<span class="material-symbols-outlined text-sm">download</span> Download PDF
+                            <button
+                                class="bg-primary-gradient text-on-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-opacity hover:opacity-90">
+                                <span class="material-symbols-outlined text-sm">download</span> Download PDF
                             </button>
-</div>
-</div>
-</article>
-<!-- Card 4 -->
-<article class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300 hover:-translate-y-2">
-<div class="aspect-video relative overflow-hidden bg-surface-container">
-<img alt="Ciencias" class="w-full h-full object-cover" data-alt="microscope and glass slides in a modern clean laboratory with blue and white accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCifysHnjoRWYuIQwj1orSpZJ1dcH0rbdfEBnbFx0GYkoS97w3YkTOjP3wgQO-zUF8T0i5VicuvzXFDeriTwR7RHWeK1FaFETTrMwyHRPaAL0z_LRqzzKKC2RdyPkJykU23xEippWEtteiWm1RA_xsJMef3LsZCarwK6Lz5Tz0PmNk8fshk54qw1gRAEWVZDuGgnozHHYdpLC2eTJX1_vgqOQF4epUEUAD8EL0WtfiQ9aa5gVpM9CcCwoWT1ckXHOqmuSlh9sO_gSyv"/>
-<div class="absolute top-4 left-4">
-<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">Ciencias</span>
-</div>
-</div>
-<div class="p-6">
-<h3 class="font-headline text-xl font-bold text-on-surface mb-3">Experimentos Científicos</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 4 -->
+                <article
+                    class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300 hover:-translate-y-2">
+                    <div class="aspect-video relative overflow-hidden bg-surface-container">
+                        <img alt="Ciencias" class="w-full h-full object-cover"
+                            data-alt="microscope and glass slides in a modern clean laboratory with blue and white accents"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCifysHnjoRWYuIQwj1orSpZJ1dcH0rbdfEBnbFx0GYkoS97w3YkTOjP3wgQO-zUF8T0i5VicuvzXFDeriTwR7RHWeK1FaFETTrMwyHRPaAL0z_LRqzzKKC2RdyPkJykU23xEippWEtteiWm1RA_xsJMef3LsZCarwK6Lz5Tz0PmNk8fshk54qw1gRAEWVZDuGgnozHHYdpLC2eTJX1_vgqOQF4epUEUAD8EL0WtfiQ9aa5gVpM9CcCwoWT1ckXHOqmuSlh9sO_gSyv" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">Ciencias</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline text-xl font-bold text-on-surface mb-3">Experimentos Científicos</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
                             Guía paso a paso para realizar experimentos seguros en casa con materiales reciclados.
                         </p>
-<div class="flex items-center justify-between mt-auto">
-<span class="text-xs font-medium text-outline flex items-center gap-1">
-<span class="material-symbols-outlined text-sm">picture_as_pdf</span> PDF • 3.2 MB
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs font-medium text-outline flex items-center gap-1">
+                                <span class="material-symbols-outlined text-sm">picture_as_pdf</span> PDF • 3.2 MB
                             </span>
-<button class="bg-primary-gradient text-on-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-opacity hover:opacity-90">
-<span class="material-symbols-outlined text-sm">download</span> Download PDF
+                            <button
+                                class="bg-primary-gradient text-on-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-opacity hover:opacity-90">
+                                <span class="material-symbols-outlined text-sm">download</span> Download PDF
                             </button>
-</div>
-</div>
-</article>
-<!-- Card 5 -->
-<article class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300 hover:-translate-y-2">
-<div class="aspect-video relative overflow-hidden bg-surface-container">
-<img alt="Educación" class="w-full h-full object-cover" data-alt="cheerful students raising hands in a bright modern classroom with a friendly teacher" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtIevrbr-M_n3wfi2r0LcaJXapA0fGAphJgwoPa9ZTSW85LNg9blM8oB0c_KZvwv13qf3HGt8uJ_whfkgbkhaAoEHu1Y0HTjZiyh_EbCr7YocAHSRMyB8X6UiJtn_2Ao926Y24jp4TkWTf9oADPzyEP6bGQk1_4DLl2h2ObWRx-qeGPAltvAotVBSo2ALQ1fSrMkb2fYOSWeL_3Pv3PnkGmGSK8xaa6uWSATcUipNEWCrQVM1hUpOD4u0LA7zgmUX2kB-FhiyLX1wm"/>
-<div class="absolute top-4 left-4">
-<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">Todos</span>
-</div>
-</div>
-<div class="p-6">
-<h3 class="font-headline text-xl font-bold text-on-surface mb-3">Planificación Docente</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 5 -->
+                <article
+                    class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300 hover:-translate-y-2">
+                    <div class="aspect-video relative overflow-hidden bg-surface-container">
+                        <img alt="Educación" class="w-full h-full object-cover"
+                            data-alt="cheerful students raising hands in a bright modern classroom with a friendly teacher"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtIevrbr-M_n3wfi2r0LcaJXapA0fGAphJgwoPa9ZTSW85LNg9blM8oB0c_KZvwv13qf3HGt8uJ_whfkgbkhaAoEHu1Y0HTjZiyh_EbCr7YocAHSRMyB8X6UiJtn_2Ao926Y24jp4TkWTf9oADPzyEP6bGQk1_4DLl2h2ObWRx-qeGPAltvAotVBSo2ALQ1fSrMkb2fYOSWeL_3Pv3PnkGmGSK8xaa6uWSATcUipNEWCrQVM1hUpOD4u0LA7zgmUX2kB-FhiyLX1wm" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">Todos</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline text-xl font-bold text-on-surface mb-3">Planificación Docente</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
                             Plantillas editables para la organización semanal y seguimiento de objetivos pedagógicos.
                         </p>
-<div class="flex items-center justify-between mt-auto">
-<span class="text-xs font-medium text-outline flex items-center gap-1">
-<span class="material-symbols-outlined text-sm">picture_as_pdf</span> PDF • 1.2 MB
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs font-medium text-outline flex items-center gap-1">
+                                <span class="material-symbols-outlined text-sm">picture_as_pdf</span> PDF • 1.2 MB
                             </span>
-<button class="bg-primary-gradient text-on-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-opacity hover:opacity-90">
-<span class="material-symbols-outlined text-sm">download</span> Download PDF
+                            <button
+                                class="bg-primary-gradient text-on-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-opacity hover:opacity-90">
+                                <span class="material-symbols-outlined text-sm">download</span> Download PDF
                             </button>
-</div>
-</div>
-</article>
-<!-- Card 6 -->
-<article class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300 hover:-translate-y-2">
-<div class="aspect-video relative overflow-hidden bg-surface-container">
-<img alt="Matemáticas" class="w-full h-full object-cover" data-alt="clean minimal wooden ruler and pencils on a white grid paper with blueprint aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtabar19EHMrIeWG6AuyGk1j5RRb_9JTG4jnif1EWALJPTvdi7iopbXReaFENEQrtbNusQv9Cl1aRJIfdL-EKOclFs4znXoMjInT714NIknHwwltXF-Kd9Mq_NJr-tIXoDwVel7OzOPLq2G9zrVqDZo0-rLZwJKx5iU8gBeAlRXQ1aH5nVmVEsmAG6Xu7uKnSp-XVGDYytuY-yvX-CLSsZYT6XRhFoR2q-PPOmwEw6fOfYAOPKpytQIVY42jj713EYh3JCyZig3rL6"/>
-<div class="absolute top-4 left-4">
-<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">Matemáticas</span>
-</div>
-</div>
-<div class="p-6">
-<h3 class="font-headline text-xl font-bold text-on-surface mb-3">Geometría Básica</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 6 -->
+                <article
+                    class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300 hover:-translate-y-2">
+                    <div class="aspect-video relative overflow-hidden bg-surface-container">
+                        <img alt="Matemáticas" class="w-full h-full object-cover"
+                            data-alt="clean minimal wooden ruler and pencils on a white grid paper with blueprint aesthetic"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtabar19EHMrIeWG6AuyGk1j5RRb_9JTG4jnif1EWALJPTvdi7iopbXReaFENEQrtbNusQv9Cl1aRJIfdL-EKOclFs4znXoMjInT714NIknHwwltXF-Kd9Mq_NJr-tIXoDwVel7OzOPLq2G9zrVqDZo0-rLZwJKx5iU8gBeAlRXQ1aH5nVmVEsmAG6Xu7uKnSp-XVGDYytuY-yvX-CLSsZYT6XRhFoR2q-PPOmwEw6fOfYAOPKpytQIVY42jj713EYh3JCyZig3rL6" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">Matemáticas</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline text-xl font-bold text-on-surface mb-3">Geometría Básica</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
                             Fichas de trabajo sobre figuras geométricas, perímetros y áreas para niveles iniciales.
                         </p>
-<div class="flex items-center justify-between mt-auto">
-<span class="text-xs font-medium text-outline flex items-center gap-1">
-<span class="material-symbols-outlined text-sm">picture_as_pdf</span> PDF • 2.1 MB
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs font-medium text-outline flex items-center gap-1">
+                                <span class="material-symbols-outlined text-sm">picture_as_pdf</span> PDF • 2.1 MB
                             </span>
-<button class="bg-primary-gradient text-on-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-opacity hover:opacity-90">
-<span class="material-symbols-outlined text-sm">download</span> Download PDF
+                            <button
+                                class="bg-primary-gradient text-on-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-opacity hover:opacity-90">
+                                <span class="material-symbols-outlined text-sm">download</span> Download PDF
                             </button>
-</div>
-</div>
-</article>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="max-w-7xl mx-auto px-8 mt-24">
-<div class="bg-primary-gradient rounded-2xl p-12 text-center text-on-primary relative overflow-hidden shadow-xl">
-<div class="relative z-10">
-<h2 class="font-headline text-3xl md:text-4xl font-bold mb-4">¿Tienes material para compartir?</h2>
-<p class="text-primary-fixed max-w-xl mx-auto mb-8 opacity-90">
-                        Únete a nuestra comunidad de más de 5,000 docentes y ayuda a transformar la educación compartiendo tus mejores recursos.
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="max-w-7xl mx-auto px-8 mt-24">
+            <div
+                class="bg-primary-gradient rounded-2xl p-12 text-center text-on-primary relative overflow-hidden shadow-xl">
+                <div class="relative z-10">
+                    <h2 class="font-headline text-3xl md:text-4xl font-bold mb-4">¿Tienes material para compartir?</h2>
+                    <p class="text-primary-fixed max-w-xl mx-auto mb-8 opacity-90">
+                        Únete a nuestra comunidad de más de 5,000 docentes y ayuda a transformar la educación
+                        compartiendo tus mejores recursos.
                     </p>
-<button class="bg-white text-primary px-8 py-3 rounded-lg font-bold transition-transform hover:scale-105 active:scale-95">
+                    <button
+                        class="bg-white text-primary px-8 py-3 rounded-lg font-bold transition-transform hover:scale-105 active:scale-95">
                         Subir Recurso
                     </button>
-</div>
-<!-- Abstract decoration -->
-<div class="absolute -right-20 -bottom-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-<div class="absolute -left-20 -top-20 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
-<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-6">
-<div class="flex flex-col items-center md:items-start">
-<div class="font-plus-jakarta font-bold text-[#006b55] text-xl mb-2">EduHub</div>
-<p class="font-inter text-xs text-slate-500 dark:text-slate-400">© 2024 EduHub. The Digital Curator.</p>
-</div>
-<div class="flex flex-wrap justify-center gap-8">
-<a class="font-inter text-xs text-slate-500 hover:text-slate-900 dark:hover:text-white transition-opacity hover:opacity-100 underline decoration-[#4fb094] underline-offset-4" href="#">Twitter</a>
-<a class="font-inter text-xs text-slate-500 hover:text-slate-900 dark:hover:text-white transition-opacity hover:opacity-100 underline decoration-[#4fb094] underline-offset-4" href="#">LinkedIn</a>
-<a class="font-inter text-xs text-slate-500 hover:text-slate-900 dark:hover:text-white transition-opacity hover:opacity-100 underline decoration-[#4fb094] underline-offset-4" href="#">Instagram</a>
-<a class="font-inter text-xs text-[#006b55] underline transition-opacity hover:opacity-100" href="#">Admin Login</a>
-</div>
-</div>
-</footer>
-</body></html>
+                </div>
+                <!-- Abstract decoration -->
+                <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+                <div class="absolute -left-20 -top-20 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+        <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-6">
+            <div class="flex flex-col items-center md:items-start">
+                <div class="font-plus-jakarta font-bold text-[#006b55] text-xl mb-2">EduHub</div>
+                <p class="font-inter text-xs text-slate-500 dark:text-slate-400">© 2024 EduHub. The Digital Curator.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8">
+                <a class="font-inter text-xs text-slate-500 hover:text-slate-900 dark:hover:text-white transition-opacity hover:opacity-100 underline decoration-[#4fb094] underline-offset-4"
+                    href="#">Twitter</a>
+                <a class="font-inter text-xs text-slate-500 hover:text-slate-900 dark:hover:text-white transition-opacity hover:opacity-100 underline decoration-[#4fb094] underline-offset-4"
+                    href="#">LinkedIn</a>
+                <a class="font-inter text-xs text-slate-500 hover:text-slate-900 dark:hover:text-white transition-opacity hover:opacity-100 underline decoration-[#4fb094] underline-offset-4"
+                    href="#">Instagram</a>
+                <a class="font-inter text-xs text-[#006b55] underline transition-opacity hover:opacity-100"
+                    href="#">Admin Login</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
